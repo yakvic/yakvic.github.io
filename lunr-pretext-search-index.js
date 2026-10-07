@@ -40,7 +40,7 @@ var ptx_lunr_docs = [
   "id": "fig_Python_Check_Win",
   "level": "2",
   "url": "sec_pyth_install.html#fig_Python_Check_Win",
-  "type": "Abb.",
+  "type": "Figur",
   "number": "1.1.1",
   "title": "",
   "body": " Zwei Möglichkeiten, die Eingabeaufforderung App zu starten und von dort die Verfügbarkeit von Python mit Hilfe des Befehls python --version zu prüfen.    Eingabe vom cmd.exe Befehl und das Öffnen des Eingabeaufforderung Fensters durch Klick auf den Ausführen Button.       Der Aufruf des Eingabeaufforderung Fensters mit dem Shortcut ⌘ x .      Das Eingabeaufforderung Fenster mit der Befehlseingabe zum Checken der Verfügbarkeit und Version von Python.     "
@@ -58,7 +58,7 @@ var ptx_lunr_docs = [
   "id": "fig_terminal_macOS",
   "level": "2",
   "url": "sec_pyth_install.html#fig_terminal_macOS",
-  "type": "Abb.",
+  "type": "Figur",
   "number": "1.1.2",
   "title": "",
   "body": " Aufruf der Terminal App über Spotlight unter macOS.    "
@@ -67,7 +67,7 @@ var ptx_lunr_docs = [
   "id": "fig_Akt_pyth_V3142",
   "level": "2",
   "url": "sec_pyth_install.html#fig_Akt_pyth_V3142",
-  "type": "Abb.",
+  "type": "Figur",
   "number": "1.1.3",
   "title": "",
   "body": " Auswahl der aktuellen Python Version 3.14.2 auf der offiziellen Website  .   "
@@ -85,7 +85,7 @@ var ptx_lunr_docs = [
   "id": "python1",
   "level": "2",
   "url": "sec_pyth_install.html#python1",
-  "type": "Listing",
+  "type": "Liste",
   "number": "1.1.5",
   "title": "Hello, Python",
   "body": " Hello, Python    "
@@ -94,7 +94,7 @@ var ptx_lunr_docs = [
   "id": "hello-python2",
   "level": "2",
   "url": "sec_pyth_install.html#hello-python2",
-  "type": "Listing",
+  "type": "Liste",
   "number": "1.1.6",
   "title": "Running the script",
   "body": " Running the script   print(\"XXX\")  Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!   "
@@ -130,7 +130,7 @@ var ptx_lunr_docs = [
   "id": "number-theory-proof",
   "level": "2",
   "url": "sec_pyth_install.html#number-theory-proof",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.10",
   "title": "Parsons Problem, mathematischer Beweis.",
   "body": " Parsons Problem, mathematischer Beweis  even numbers   Create a proof of the theorem: If is an even number, then .     Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .     Dorothy will not be much help with this proof.   "
@@ -139,7 +139,7 @@ var ptx_lunr_docs = [
   "id": "prime-number-program-numbered-left",
   "level": "2",
   "url": "sec_pyth_install.html#prime-number-program-numbered-left",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.11",
   "title": "Parsons Problem, Programming.",
   "body": " Parsons Problem, Programming  prime numbers  Sieve of Eratosthenes   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    "
@@ -148,7 +148,7 @@ var ptx_lunr_docs = [
   "id": "prime-number-program-numbered-left-prog",
   "level": "2",
   "url": "sec_pyth_install.html#prime-number-program-numbered-left-prog",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.12",
   "title": "Parsons Problem, Programming.",
   "body": " Parsons Problem, Programming  prime numbers  Sieve of Eratosthenes   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)      "
@@ -157,7 +157,7 @@ var ptx_lunr_docs = [
   "id": "horizontal-parson-python-test",
   "level": "2",
   "url": "sec_pyth_install.html#horizontal-parson-python-test",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.13",
   "title": "Parsons Problem, Python import.",
   "body": " Parsons Problem, Python import   Austesten eines Programms.    from  math  import  pi   "
@@ -166,7 +166,7 @@ var ptx_lunr_docs = [
   "id": "matching-derivatives",
   "level": "2",
   "url": "sec_pyth_install.html#matching-derivatives",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.14",
   "title": "Cardsort Problem, Derivatives.",
   "body": " Cardsort Problem, Derivatives  matching derivatives   Match each function with its derivative.    Did you compute the derivative of each function in the premises (left column)?                  "
@@ -175,7 +175,7 @@ var ptx_lunr_docs = [
   "id": "clickable-code",
   "level": "2",
   "url": "sec_pyth_install.html#clickable-code",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.15",
   "title": "Clickable Areas, Code.",
   "body": " Clickable Areas, Code   Identify (by clicking, or by circling) all of the assignment statements in this Python function.    def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)    Remember, the operator = is used for assignment.   "
@@ -184,7 +184,7 @@ var ptx_lunr_docs = [
   "id": "exe_1",
   "level": "2",
   "url": "sec_pyth_install.html#exe_1",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.16",
   "title": "Optimization.",
   "body": " Optimization    Find the critical points.    Differentiate first.      Classify each critical point.    Use the second derivative test.    "
@@ -193,7 +193,7 @@ var ptx_lunr_docs = [
   "id": "horizontal-parson-math-test",
   "level": "2",
   "url": "sec_pyth_install.html#horizontal-parson-math-test",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.17",
   "title": "Parsons Problem with math blocks.",
   "body": " Parsons Problem with math blocks   Testing math mode blocks - correct answer is          "
@@ -202,7 +202,7 @@ var ptx_lunr_docs = [
   "id": "question-select",
   "level": "2",
   "url": "sec_pyth_install.html#question-select",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.18",
   "title": "Three-way Select Question.",
   "body": "Three-way Select Question Runestone-only: exercise to grade will be automatically chosen by Runestone from , , or . "
@@ -229,7 +229,7 @@ var ptx_lunr_docs = [
   "id": "vector-space-dimension",
   "level": "2",
   "url": "sec_pyth_install.html#vector-space-dimension",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.20",
   "title": "True\/False.",
   "body": " True\/False  vector space   Every vector space has finite dimension.    The vector space of all polynomials with finite degree has a basis, , which is infinte.     the vector space of polynomials with degree at most , has dimension by ...?   "
@@ -238,7 +238,7 @@ var ptx_lunr_docs = [
   "id": "multiple-choice-not-randomized",
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-not-randomized",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.21",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?   "
@@ -247,7 +247,7 @@ var ptx_lunr_docs = [
   "id": "multiple-choice-feedback-math",
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-feedback-math",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.22",
   "title": "Multiple-Choice, Math in Feedback.",
   "body": " Multiple-Choice, Math in Feedback   What is the coefficient on in ?           Have you accounted for the and that are in the original binomial?           What should the exponents on and be when you expand ?           Have you included something of the form in your computations?           Correct! Using the binomial theorem, we get a term containing the monomial by taking two of the first term, and two of the second term in the expansion of , and so this term is equal to .     "
@@ -256,7 +256,7 @@ var ptx_lunr_docs = [
   "id": "multiple-choice-multiple-answers",
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-multiple-answers",
-  "type": "Übungsaufgabe",
+  "type": "[exercise-inline]",
   "number": "1.1.23",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": " Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym  ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym  ROY G BIV for the colors of a rainbow, and their order?   "
@@ -295,13 +295,13 @@ var ptx_lunr_docs = [
   "type": "Abschnitt",
   "number": "2.1",
   "title": "Python als Taschenrechner",
-  "body": " Python als Taschenrechner  Jedes Computerprogramm besteht in der Regel aus mehreren Anweisungen, die nach dem Programmstart, und zwar ausgehend vom ersten und bis hin zum letzten Programmbefehl (Programmende) je nacheinander automatisch ausgeführt werden. Die einzelnen Anweisungen eines Python Programms lassen sich hingegen mit Hilfe eines Standardwerkzeuges, auch genannt als Python Konsole , komfortabel und schnell austesten.  Damit können die einzelnen Python Befehle und ihre Ergebnisse interaktiv und benutzerfreundlich untersucht und auf Richtigkeit überprüft werden. Dabei sind folgende Anmerkungen zu beachten.   Vorteile  Man kann schnell und einfach Dinge ausprobieren.    Nachteile  Da der Python Code nicht dauerhaft gespeichert wird, kann er nicht wiederverwendet werden.      Python Konsole   Python Konsole von TJ.    Aufruf der Konsole im Hauptfenster von TJ.      Konsolenfenster von TJ.        Benutzeranweisungen für das Konsolenfenster von TJ        Starten Sie TJ und klicken Sie auf das schwarze Schaltfläche in der Abb. , um das Popup Fenster Konsole (s. Abb. ) zu öffnen. Dieses lässt sich auch durch die Tastenkombination Ctrl+T aufrufen. Drei Pfeile >>> , welche im Konsolenfenster zu sehen sind, zeigen an, dass Python Interpreter auf einen Befehl im Eingabefeld rechts wartet. Auf dieser Befehlszeile tippen Sie eine Anweisung ein und schliessen sie mit der Taste ab. Mit dem Spezialbefehl exit() oder durch manuelle Schliessung des Konsolenfensters können Sie die aktuelle Sitzung jederzeit beenden.  Wie in einem gewöhnlichen Editor können Sie sich mit den Kursortasten auf der Befehlszeile hin und herbewegen, um einzelne Zeichen zu löschen oder einzufügen. Sobald Sie Taste drücken, wird die Befehlszeile ausgeführt, ausser es sich um einen mehrzeiligen Befehl handelt. In diesem Fall wird der Befehl erst dann ausgeführt, wenn Sie drücken.  Sie können auch bereits verarbeitete Eingaben mit gedrückter linker Maustaste markieren und durch die Ctrl+C Tastenkombination in die Zwischenablage kopieren. Befindet sich Ihr Cursor auf der Befehlszeile, so können Sie mit der Ctrl+V Tastenkombination den Inhalt der Zwischenablage dort einfügen.  Das Unterstreichungszeichen __ ist ein Platzhalter für das Resultat einer vorgängigen Rechenoperation. Mit und Tasten können Sie die letzten Eingabezeilen zurückholen und mit und Pfeiltasten editieren.     Aufgaben zu arithmetischen, logischen und Zeichenkettenausdrücken  Öffnen Sie die Python Konsole in PyCharm oder TigerJython und geben Sie nach der >>> Aufforderung die folgenden Ausdrucksanweisungen ein. Zum Ausführen schliessen Sie die Eingabe jeweils mit Taste ab. Überprüfen Sie die Ergebnisse am Taschenrechner und vergleichen sie auch mit Lösungen im Abschnitt.      Eingebaute mathematische Operatoren \/ Funktionen und ihre Prioritäten (von hoch nach niedrig) in Python.    Arithmetische Ausdrücke:  Logische Ausdrücke  Zeichenketten Ausdrücke:  Grosse Zahlen:     Lösungen für Aufgaben zu Ausdrucks Anweisungen     Arithmetische Ausdrücke:     Logische Ausdrücke:     Zeichenketten Ausdrücke:     Grosse Zahlen gut lesbar:       "
+  "body": " Python als Taschenrechner   Jedes Computerprogramm besteht in der Regel aus mehreren Anweisungen, die nach dem Programmstart, und zwar ausgehend vom ersten und bis hin zum letzten Programmbefehl (Programmende) je nacheinander automatisch ausgeführt werden. Die einzelnen Anweisungen eines Python Programms lassen sich hingegen mit Hilfe eines Standardwerkzeuges, auch genannt als Python Konsole , komfortabel und schnell austesten.  Damit können die einzelnen Python Befehle und ihre Ergebnisse interaktiv und benutzerfreundlich untersucht und auf Richtigkeit überprüft werden. Dabei sind folgende Anmerkungen zu beachten.   Vorteile  Man kann schnell und einfach Dinge ausprobieren.    Nachteile  Da der Python Code nicht dauerhaft gespeichert wird, kann er nicht wiederverwendet werden.       Python Konsole   Python Konsole von TJ.    Aufruf der Konsole im Hauptfenster von TJ.      Konsolenfenster von TJ.        Benutzeranweisungen für das Konsolenfenster von TJ        Starten Sie TJ und klicken Sie auf das schwarze Schaltfläche in der Abb. , um das Popup Fenster Konsole (s. Abb. ) zu öffnen. Dieses lässt sich auch durch die Tastenkombination Ctrl+T aufrufen. Drei Pfeile >>> , welche im Konsolenfenster zu sehen sind, zeigen an, dass Python Interpreter auf einen Befehl im Eingabefeld rechts wartet. Auf dieser Befehlszeile tippen Sie eine Anweisung ein und schliessen sie mit der Taste ab. Mit dem Spezialbefehl exit() oder durch manuelle Schliessung des Konsolenfensters können Sie die aktuelle Sitzung jederzeit beenden.  Wie in einem gewöhnlichen Editor können Sie sich mit den Kursortasten auf der Befehlszeile hin und herbewegen, um einzelne Zeichen zu löschen oder einzufügen. Sobald Sie Taste drücken, wird die Befehlszeile ausgeführt, ausser es sich um einen mehrzeiligen Befehl handelt. In diesem Fall wird der Befehl erst dann ausgeführt, wenn Sie drücken.  Sie können auch bereits verarbeitete Eingaben mit gedrückter linker Maustaste markieren und durch die Ctrl+C Tastenkombination in die Zwischenablage kopieren. Befindet sich Ihr Cursor auf der Befehlszeile, so können Sie mit der Ctrl+V Tastenkombination den Inhalt der Zwischenablage dort einfügen.  Das Unterstreichungszeichen __ ist ein Platzhalter für das Resultat einer vorgängigen Rechenoperation. Mit und Tasten können Sie die letzten Eingabezeilen zurückholen und mit und Pfeiltasten editieren.     Aufgaben zu arithmetischen, logischen und Zeichenkettenausdrücken  Öffnen Sie die Python Konsole in PyCharm oder TigerJython und geben Sie nach der >>> Aufforderung die folgenden Ausdrucksanweisungen ein. Zum Ausführen schliessen Sie die Eingabe jeweils mit Taste ab. Überprüfen Sie die Ergebnisse am Taschenrechner und vergleichen sie auch mit Lösungen im Abschnitt.      Eingebaute mathematische Operatoren \/ Funktionen und ihre Prioritäten (von hoch nach niedrig) in Python.    Arithmetische Ausdrücke:  Logische Ausdrücke  Zeichenketten Ausdrücke:  Grosse Zahlen:     Lösungen für Aufgaben zu Ausdrucks Anweisungen     Arithmetische Ausdrücke:     Logische Ausdrücke:     Zeichenketten Ausdrücke:     Grosse Zahlen gut lesbar:       "
 },
 {
   "id": "fig_Pyth_Kons_Fest",
   "level": "2",
   "url": "sec_pyth_als_TR.html#fig_Pyth_Kons_Fest",
-  "type": "Abb.",
+  "type": "Figur",
   "number": "2.1.1",
   "title": "",
   "body": " Python Konsole von TJ.    Aufruf der Konsole im Hauptfenster von TJ.      Konsolenfenster von TJ.      "
