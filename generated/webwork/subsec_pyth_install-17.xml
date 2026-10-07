@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subsec_pyth_install-17" assembly-id="subsec_pyth_install-17">
+  <static seed="1" failure="compile">
+    <statement>
+      <p>PTX:ERROR: WeBWorK problem Algorithmik_mit_Python/1_1_10.pg with seed 1 is either empty or failed to compile  
+  Use -a to halt with full PG and returned content
+</p>
+    </statement>
+  </static>
+  <rendering-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygnUEdzdGFuZGFyZC5wbCcpOwpURVhUKCdXZUJXb3JLIFByb2JsZW0gRG9lcyBOb3QgRXhpc3QgT3IgRGlkIE5vdCBDb21waWxlJyk7CkVORERPQ1VNRU5UKCk7" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="de-DE"/>
+  <pg><![CDATA[
+DOCUMENT();
+loadMacros('PGstandard.pl','PGML.pl','PGcourse.pl');
+BEGIN_PGML
+PTX:ERROR: WeBWorK problem Algorithmik_mit_Python/1_1_10.pg with seed 1 is either empty or failed to compile  
+  Use -a to halt with full PG and returned content
+END_PGML
+ENDDOCUMENT();]]></pg>
+</webwork-reps>

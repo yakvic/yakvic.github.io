@@ -1,0 +1,8 @@
+Hallo Welt!
+Name: Alex
+Lieblingsessen: Pizza
+a = 3 b = 7
+Python
+macht
+Spass
+Er sagte: "Python ist toll!"

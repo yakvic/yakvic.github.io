@@ -1,0 +1,3 @@
+Radius = 1.5, Umfang = 9.42477, Flaeche = 7.0685775
+--------------------------------------------------- 
+Das Programm ist erfolgreich beendet!

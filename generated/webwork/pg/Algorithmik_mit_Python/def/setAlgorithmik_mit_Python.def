@@ -1,0 +1,11 @@
+openDate          = 01/01/2027 at 12:00am
+dueDate           = 12/31/2027 at 10:00pm
+answerDate        = 12/31/2027 at 10:00pm
+paperHeaderFile   = Algorithmik_mit_Python/header/Algorithmik_mit_Python.pg
+screenHeaderFile  = Algorithmik_mit_Python/header/Algorithmik_mit_Python.pg
+description       = Algorithmik mit Python
+problemListV2
+problem_start
+source_file = Algorithmik_mit_Python/1_1_10.pg
+problem_id = 10
+problem_end

@@ -1,0 +1,5 @@
+a = 7.123, b = -23.457
+Die Gleichung hat die Form: (7.123) * x + (-23.457) = 0
+Die Lösung lautet: x = 3.293134915063878
+_________________________________________
+Das Programm ist erfolgreich beendet!

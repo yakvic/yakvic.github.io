@@ -1,0 +1,6 @@
+a = 1.0, b = 2.0, c = -3.0
+Die quadratische Gleichung lautet: (1.0)*x^2 + (2.0)*x + (-3.0) = 0
+Die Diskriminante D = b^2 - 4*a*c = 16.0 > 0 ==>
+Zwei Lösungen der Gleichung lauten: x1 = 1.0, x2 = -3.0
+______________________________________________________________________
+Das Programm ist erfolgreich beendet!

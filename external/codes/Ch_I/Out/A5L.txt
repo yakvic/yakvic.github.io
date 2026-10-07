@@ -1,0 +1,11 @@
+10-20-30
+Name     Alter
+Anna     20
+Ben      18
+Carla    22
+
+*** Menü ***
+1. Start
+2. Optionen
+3. Beenden
+
