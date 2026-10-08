@@ -40,7 +40,7 @@ var ptx_lunr_docs = [
   "id": "fig_Python_Check_Win",
   "level": "2",
   "url": "sec_pyth_install.html#fig_Python_Check_Win",
-  "type": "Figur",
+  "type": "Abb.",
   "number": "1.1.1",
   "title": "",
   "body": " Zwei Möglichkeiten, die Eingabeaufforderung App zu starten und von dort die Verfügbarkeit von Python mit Hilfe des Befehls python --version zu prüfen.    Eingabe vom cmd.exe Befehl und das Öffnen des Eingabeaufforderung Fensters durch Klick auf den Ausführen Button.       Der Aufruf des Eingabeaufforderung Fensters mit dem Shortcut ⌘ x .      Das Eingabeaufforderung Fenster mit der Befehlseingabe zum Checken der Verfügbarkeit und Version von Python.     "
@@ -58,7 +58,7 @@ var ptx_lunr_docs = [
   "id": "fig_terminal_macOS",
   "level": "2",
   "url": "sec_pyth_install.html#fig_terminal_macOS",
-  "type": "Figur",
+  "type": "Abb.",
   "number": "1.1.2",
   "title": "",
   "body": " Aufruf der Terminal App über Spotlight unter macOS.    "
@@ -67,7 +67,7 @@ var ptx_lunr_docs = [
   "id": "fig_Akt_pyth_V3142",
   "level": "2",
   "url": "sec_pyth_install.html#fig_Akt_pyth_V3142",
-  "type": "Figur",
+  "type": "Abb.",
   "number": "1.1.3",
   "title": "",
   "body": " Auswahl der aktuellen Python Version 3.14.2 auf der offiziellen Website  .   "
@@ -301,7 +301,7 @@ var ptx_lunr_docs = [
   "id": "fig_Pyth_Kons_Fest",
   "level": "2",
   "url": "sec_pyth_als_TR.html#fig_Pyth_Kons_Fest",
-  "type": "Figur",
+  "type": "Abb.",
   "number": "2.1.1",
   "title": "",
   "body": " Python Konsole von TJ.    Aufruf der Konsole im Hauptfenster von TJ.      Konsolenfenster von TJ.      "
