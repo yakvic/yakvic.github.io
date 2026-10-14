@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Abschnitt",
   "number": "1.1",
   "title": "Verfügbarkeitscheck, Installation und Einrichtung von Python auf PC",
-  "body": " Verfügbarkeitscheck, Installation und Einrichtung von Python auf PC   Hutzutage ist es ist nicht ungewöhnlich, dass Python unter vielen Betriebssystemen bereits vorinstalliert ist. Das kann sehr einfach kontrolliert werden, indem wir für Python seine Version ausgeben lassen. Ist Python nicht installiert, kommt eine Fehlermeldung oder ansonsten kennen wir danach die aktuelle Version.    Python schon installiert?    Unter Windows benötigen wir für den Check der Verfügbarkeit von Python die Befehlszeile, die wir bei der Eingabeaufforderung App (aufrufbar über den Ausführung Button bei der Suche nach cmd.exq oder durch die Tastenkombination 🪟 x direkt starten können:    Zwei Möglichkeiten, die Eingabeaufforderung App zu starten und von dort die Verfügbarkeit von Python mit Hilfe des Befehls python --version zu prüfen.    Eingabe vom cmd.exe Befehl und das Öffnen des Eingabeaufforderung Fensters durch Klick auf den Ausführen Button.       Der Aufruf des Eingabeaufforderung Fensters mit dem Shortcut 🪟 x .      Das Eingabeaufforderung Fenster mit der Befehlseingabe zum Checken der Verfügbarkeit und Version von Python.       Im Eingabeaufforderung Fenster geben wir nun beim Cursor das Kommando python --version ein und erhalten dann je nach Installationsstatus von Python entweder einen Fehler oder die auf dem System installierte Python Version, wie z.B. die veraltete Version 3.9.7 der Python Distribution bei der Befehlsausgabe in Abb. .   Beim macOS kann man das Terminal über den Ordner öffnen oder es sogar blitzschnell über aufrufen. lässt sich mit dem Tastaturkurzbefehl ⌘ starten. Tippen Sie im Eingabefeld die Anfangsbuchstaben ter ein und drücken Sie dann direkt die Eingabetaste. Davor müssen Sie eventuell erst über die Pfeiltasten die App auswählen (s. Abb. ). Im Terminal Fenster geben Sie anschliessend den Befehl python3 --version ein, um herauszufinden, welche Python Version auf Ihrem PC vorinstalliert, respektive nicht vorhanden ist.     Aufruf der Terminal App über Spotlight unter macOS.      Auswahl der aktuellen Python Version 3.14.2 auf der offiziellen Website  .                        Fundamental Structures   This is an <objectives> element you are reading, and this is its introduction. This early section has really grown and tries to accomplish many things. Not all of them are listed here.     Display various blocks , fundamental units of the flow.  More.  Evermore.                Hello, Python   print(\"Hello, world 1\") print(\"Hello, world 1*\")     Siehe Blah-Blah-Blah  Siehe Blah1-Blah1-Blah1  Siehe Blah2-Blah2-Blah2  Siehe Blah3-Blah3-Blah3  Siehe Blah4-Blah4-Blah4  Siehe Blah5  Siehe Blah6  Siehe Blah7  Siehe Blah8      Running the script   print(\"XXX\")  Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!     print(\"XXX\")  Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!    print(\"XX X \") Hello, world! Hello, world! Hello, world!  print(\"XXX\") Hello, world!  Hello, +++ world!  Hello, ... world!      def square(n): return n * n def square(n): return n * n     def square(n): return n * n     Summing the first ten squares (Computation)   total = sum(n * n for n in range(1, 11)) print(total)       import java.util.Scanner;  public class Main { public static void main(String[] args) { System.out.println(\"Hello, world!\"); } }                                       Parsons Problem, mathematischer Beweis  even numbers   Create a proof of the theorem: If is an even number, then .     Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .     Dorothy will not be much help with this proof.      Parsons Problem, Programming  prime numbers  Sieve of Eratosthenes   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)       Parsons Problem, Programming   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)         Parsons Problem, Python import   Austesten eines Programms.    from  math  import  pi      Cardsort Problem, Derivatives  matching derivatives   Match each function with its derivative.    Did you compute the derivative of each function in the premises (left column)?                     Clickable Areas, Code   Identify (by clicking, or by circling) all of the assignment statements in this Python function.    def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)    Remember, the operator = is used for assignment.      Optimization    Find the critical points.    Differentiate first.      Classify each critical point.    Use the second derivative test.       Parsons Problem with math blocks   Testing math mode blocks - correct answer is            Three-way Select Question Runestone-only: exercise to grade will be automatically chosen by Runestone from , , or .    Ausführung eines externen Python-Programms   Führe das folgende Programm aus!    \"\"\" Python-Skript A1L.py Lösung zur Aufgabe A1 \"\"\" # Definition von Variablen und Zuweisungen: a = 1 # Die Variablen a, b und c werden mit den Werten: 1 b = 2 # 2 und c = 3 # 3 belegt # 1. Berechnung: a_mal_c = a * c # a * c und b \/ c werden ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c auf die Konsole print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 auf die Konsole # Zuweisung von neuen Werten: a = -10 # Die Variablen a, b und c werden mit neuen Werten -10 b = 100 # 100 und c = -35 # -35 belegt # 2. Berechnung: a_mal_c = a * c # a * c und b \/ c werden erneut ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 print(41*'_' + \"\\nDas Programm ist erfolgreich beendet!\")      Kapitelübungen    Solve for :    Add or subtract terms from both sides so that terms with an are on the left side and all other terms are on the right.    First, combine the two terms that contain . To do this, we subtract from both sides, obtaining. .  Next, we add to both sides so only the term containing remain on the left-hand side: .  Finally, divide both sides by to get by itself: .         This and this    True\/False  vector space   Every vector space has finite dimension.    The vector space of all polynomials with finite degree has a basis, , which is infinte.     the vector space of polynomials with degree at most , has dimension by ...?     Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?     Multiple-Choice, Math in Feedback   What is the coefficient on in ?           Have you accounted for the and that are in the original binomial?           What should the exponents on and be when you expand ?           Have you included something of the form in your computations?           Correct! Using the binomial theorem, we get a term containing the monomial by taking two of the first term, and two of the second term in the expansion of , and so this term is equal to .       Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym  ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym  ROY G BIV for the colors of a rainbow, and their order?      A Skeletal Worksheet         It can be helpful to say what the point of the worksheet is.      A first exercise, given one inch of blank workspace.       Only inside a worksheet may an exercise go in a sidebyside.      And so this is a second column.             verschiedene Versionen von Python gleichzeitig installiert zu haben. Sinnvoll zum Lernen wäre jedoch die aktuellste Version 3.14.2 (zum Zeitpunkt der Drucklegung), worauf die folgende Diskussion basiert ist.  Falls Python nicht vorhanden ist, werden in folgenden Abschnitten zwei gängige Methoden beschrieben, um Python auf einem PC System möglichst schnell und effizient installieren zu können.                                                                                                                                                                                     Python Installation mit Hilfe der  Distribution  ist eine weit verbreitete Open Source Distribution für die Programmiersprache Python, die speziell für wissenschaftliches Rechnen und Datenanalyse entwickelt wurde. Sie bietet eine umfassende Sammlung von Python Paketen (Version 3.12), Bibliotheken und Entwicklungswerkzeugen. Die neueste Version von kann von der obigen offiziellen Webseite für alle Betriebssysteme heruntergeladen und installiert werden.  Alternativ kann die leichtgewichtigere Version von Anaconda namens installiert werden, die nur den Paketmanager sowie eine Minimalauswahl von Python Paketen enthält. Die  Distribution ist verfügbar für Windows, macOS sowie Linux und   Nach der Installation können Benutzer Pakete verwalten, Umgebungen erstellen und verschiedene integrierte Werkzeuge nutzen. Die Installation von ist unkompliziert und kann in wenigen nachstehenden Schritten durchgeführt werden.    "
+  "body": " Verfügbarkeitscheck, Installation und Einrichtung von Python auf PC   Hutzutage ist es ist nicht ungewöhnlich, dass Python unter vielen Betriebssystemen bereits vorinstalliert ist. Das kann sehr einfach kontrolliert werden, indem wir für Python seine Version ausgeben lassen. Ist Python nicht installiert, kommt eine Fehlermeldung oder ansonsten kennen wir danach die aktuelle Version.    Python schon installiert?    Unter Windows benötigen wir für den Check der Verfügbarkeit von Python die Befehlszeile, die wir bei der Eingabeaufforderung App (aufrufbar über den Ausführung Button bei der Suche nach cmd.exq oder durch die Tastenkombination 🪟 x direkt starten können:    Zwei Möglichkeiten, die Eingabeaufforderung App zu starten und von dort die Verfügbarkeit von Python mit Hilfe des Befehls python --version zu prüfen.    Eingabe vom cmd.exe Befehl und das Öffnen des Eingabeaufforderung Fensters durch Klick auf den Ausführen Button.       Der Aufruf des Eingabeaufforderung Fensters mit dem Shortcut 🪟 x .      Das Eingabeaufforderung Fenster mit der Befehlseingabe zum Checken der Verfügbarkeit und Version von Python.       Im Eingabeaufforderung Fenster geben wir nun beim Cursor das Kommando python --version ein und erhalten dann je nach Installationsstatus von Python entweder einen Fehler oder die auf dem System installierte Python Version, wie z.B. die veraltete Version 3.9.7 der Python Distribution bei der Befehlsausgabe in Abb. .   Beim macOS kann man das Terminal über den Ordner öffnen oder es sogar blitzschnell über aufrufen. lässt sich mit dem Tastaturkurzbefehl ⌘ starten. Tippen Sie im Eingabefeld die Anfangsbuchstaben ter ein und drücken Sie dann direkt die Eingabetaste. Davor müssen Sie eventuell erst über die Pfeiltasten die App auswählen (s. Abb. ). Im Terminal Fenster geben Sie anschliessend den Befehl python3 --version ein, um herauszufinden, welche Python Version auf Ihrem PC vorinstalliert, respektive nicht vorhanden ist.     Aufruf der Terminal App über Spotlight unter macOS.      Auswahl der aktuellen Python Version 3.14.2 auf der offiziellen Website  .                        Fundamental Structures   This is an <objectives> element you are reading, and this is its introduction. This early section has really grown and tries to accomplish many things. Not all of them are listed here.     Display various blocks , fundamental units of the flow.  More.  Evermore.                Hello, Python   print(\"Hello, world 1\") print(\"Hello, world 1*\")     Siehe Blah-Blah-Blah  Siehe Blah1-Blah1-Blah1  Siehe Blah2-Blah2-Blah2  Siehe Blah3-Blah3-Blah3    Siehe Blah6  Siehe Blah7       Running the script   print(\"XXX\")  Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!     print(\"XXX\")  Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!    print(\"XX X \") Hello, world! Hello, world! Hello, world!  print(\"XXX\") Hello, world!  Hello, +++ world!  Hello, ... world!      def square(n): return n * n def square(n): return n * n     def square(n): return n * n     Summing the first ten squares (Computation)   total = sum(n * n for n in range(1, 11)) print(total)       import java.util.Scanner;  public class Main { public static void main(String[] args) { System.out.println(\"Hello, world!\"); } }                                       Parsons Exercises   Parsons Problem, mathematischer Beweis  even numbers   Create a proof of the theorem: If is an even number, then .     Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .     Dorothy will not be much help with this proof.      Parsons Problem, Programming  prime numbers  Sieve of Eratosthenes   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)       Parsons Problem, Programming   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)         Parsons Problem, Python import   Austesten eines Programms.    from  math  import  pi      Parsons Problem with math blocks   Testing math mode blocks - correct answer is                     Cardsort Problem, Derivatives  matching derivatives   Match each function with its derivative.    Did you compute the derivative of each function in the premises (left column)?                                Clickable Areas, Code   Identify (by clicking, or by circling) all of the assignment statements in this Python function.     def main():    x = 4   for i in range(5):   y = i    if y > 2:   print(y)    Remember, the operator = is used for assignment.     Short Answer   This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.        Fill-In, New Markup Numbers   I love . What number am I thinking of, accurate to two decimal places?           The decimal approximation of is , but to two decimal places we write .        Your answer is within 0.1 of the value I wanted.        That is a reasonable guess, but no.        You chose a value between 3 and 4.        You chose a value that rounds to 3.         Fill-In, New Markup Strings   The word I'm thinking about is hinted at by the image.   What word am I thinking about? (Interactive feedback explores a variety of options: Try what happens if you mix the case, or type in a number, or include more than the word, or try pizzazz .\")             Some of the characters used the wrong case.      [0-9]+   You typed a word made out of digits.        Your answer includes the correct word but has extra text.      z.+z   Your answer includes text surrounded by z's.       Do you really need a hint? Carefully reread the question.      Fill-In, Javascript test of numbers   What is an example of a prime number less than 20?        [2, 3, 5, 7, 11, 13, 17, 19].includes(Number(ans))   Any number from the list is a prime number less than 20.      function(){ const val=Number(ans); if (val <= 0) { return \"You need to give a positive integer.\" }; if (val >= 20) { return \"The integer must be less than 20.\" }; for (let i=2; i<=3; i++) { if (val % i == 0) { return `Your answer is composite; for example, it is divisible by ${i}.` } } return false; }()        Fill-In, Javascript test of strings   What is an example of a palindrome?        function(){ const r1 = new RegExp(\"^\\\\w+$\"); var result=r1.test(ans); if (result) { let revAns = ans.split(\"\").reverse().join(\"\"); result = (ans === revAns); } return result; }()   Any word that is the same forward and backward is a palindrome.     \\w+\\s\\w+   Your response needs to be a single word.         Fill-In, Simple Randomization with Numbers   What is the square of ?      v.myNum=RNG.randDiscrete(2, 12, 1); v.mySquare=v.myNum**2;           You responded with the original number. Now square it.         Optimization    Find the critical points.    Differentiate first.      Classify each critical point.    Use the second derivative test.      Three-way Select Question Runestone-only: exercise to grade will be automatically chosen by Runestone from , , or .    Ausführung eines externen Python-Programms   Führe das folgende Programm aus!    \"\"\" Python-Skript A1L.py Lösung zur Aufgabe A1 \"\"\" # Definition von Variablen und Zuweisungen: a = 1 # Die Variablen a, b und c werden mit den Werten: 1 b = 2 # 2 und c = 3 # 3 belegt # 1. Berechnung: a_mal_c = a * c # a * c und b \/ c werden ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c auf die Konsole print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 auf die Konsole # Zuweisung von neuen Werten: a = -10 # Die Variablen a, b und c werden mit neuen Werten -10 b = 100 # 100 und c = -35 # -35 belegt # 2. Berechnung: a_mal_c = a * c # a * c und b \/ c werden erneut ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 print(41*'_' + \"\\nDas Programm ist erfolgreich beendet!\")      Kapitelübungen    Solve for :    Add or subtract terms from both sides so that terms with an are on the left side and all other terms are on the right.    First, combine the two terms that contain . To do this, we subtract from both sides, obtaining. .  Next, we add to both sides so only the term containing remain on the left-hand side: .  Finally, divide both sides by to get by itself: .           This and this    True\/False  vector space   Every vector space has finite dimension.    The vector space of all polynomials with finite degree has a basis, , which is infinte.     the vector space of polynomials with degree at most , has dimension by ...?     Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?     Multiple-Choice, Math in Feedback   What is the coefficient on in ?           Have you accounted for the and that are in the original binomial?           What should the exponents on and be when you expand ?           Have you included something of the form in your computations?           Correct! Using the binomial theorem, we get a term containing the monomial by taking two of the first term, and two of the second term in the expansion of , and so this term is equal to .       Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym  ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym  ROY G BIV for the colors of a rainbow, and their order?      A Skeletal Worksheet         It can be helpful to say what the point of the worksheet is.      A first exercise, given one inch of blank workspace.       Only inside a worksheet may an exercise go in a sidebyside.      And so this is a second column.             verschiedene Versionen von Python gleichzeitig installiert zu haben. Sinnvoll zum Lernen wäre jedoch die aktuellste Version 3.14.2 (zum Zeitpunkt der Drucklegung), worauf die folgende Diskussion basiert ist.  Falls Python nicht vorhanden ist, werden in folgenden Abschnitten zwei gängige Methoden beschrieben, um Python auf einem PC System möglichst schnell und effizient installieren zu können.                                                                                                                                                                                     Python Installation mit Hilfe der  Distribution  ist eine weit verbreitete Open Source Distribution für die Programmiersprache Python, die speziell für wissenschaftliches Rechnen und Datenanalyse entwickelt wurde. Sie bietet eine umfassende Sammlung von Python Paketen (Version 3.12), Bibliotheken und Entwicklungswerkzeugen. Die neueste Version von kann von der obigen offiziellen Webseite für alle Betriebssysteme heruntergeladen und installiert werden.  Alternativ kann die leichtgewichtigere Version von Anaconda namens installiert werden, die nur den Paketmanager sowie eine Minimalauswahl von Python Paketen enthält. Die  Distribution ist verfügbar für Windows, macOS sowie Linux und   Nach der Installation können Benutzer Pakete verwalten, Umgebungen erstellen und verschiedene integrierte Werkzeuge nutzen. Die Installation von ist unkompliziert und kann in wenigen nachstehenden Schritten durchgeführt werden.    "
 },
 {
   "id": "subsec_pyth_install-2",
@@ -109,9 +109,9 @@ var ptx_lunr_docs = [
   "body": "  def square(n): return n * n def square(n): return n * n   "
 },
 {
-  "id": "subsec_pyth_install-24",
+  "id": "computation",
   "level": "2",
-  "url": "sec_pyth_install.html#subsec_pyth_install-24",
+  "url": "sec_pyth_install.html#computation",
   "type": "Berechnung",
   "number": "1.1.8",
   "title": "Summing the first ten squares (Computation).",
@@ -130,8 +130,8 @@ var ptx_lunr_docs = [
   "id": "number-theory-proof",
   "level": "2",
   "url": "sec_pyth_install.html#number-theory-proof",
-  "type": "Übung",
-  "number": "1.1.10",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.1",
   "title": "Parsons Problem, mathematischer Beweis.",
   "body": " Parsons Problem, mathematischer Beweis  even numbers   Create a proof of the theorem: If is an even number, then .     Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .     Dorothy will not be much help with this proof.   "
 },
@@ -139,8 +139,8 @@ var ptx_lunr_docs = [
   "id": "prime-number-program-numbered-left",
   "level": "2",
   "url": "sec_pyth_install.html#prime-number-program-numbered-left",
-  "type": "Übung",
-  "number": "1.1.11",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.2",
   "title": "Parsons Problem, Programming.",
   "body": " Parsons Problem, Programming  prime numbers  Sieve of Eratosthenes   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    "
 },
@@ -148,8 +148,8 @@ var ptx_lunr_docs = [
   "id": "prime-number-program-numbered-right",
   "level": "2",
   "url": "sec_pyth_install.html#prime-number-program-numbered-right",
-  "type": "Übung",
-  "number": "1.1.12",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.3",
   "title": "Parsons Problem, Programming.",
   "body": " Parsons Problem, Programming   The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]      n = 250    primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)      "
 },
@@ -157,62 +157,116 @@ var ptx_lunr_docs = [
   "id": "horizontal-parson-python-test",
   "level": "2",
   "url": "sec_pyth_install.html#horizontal-parson-python-test",
-  "type": "Übung",
-  "number": "1.1.13",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.4",
   "title": "Parsons Problem, Python import.",
   "body": " Parsons Problem, Python import   Austesten eines Programms.    from  math  import  pi   "
+},
+{
+  "id": "horizontal-parson-math-test",
+  "level": "2",
+  "url": "sec_pyth_install.html#horizontal-parson-math-test",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.5",
+  "title": "Parsons Problem with math blocks.",
+  "body": " Parsons Problem with math blocks   Testing math mode blocks - correct answer is                  "
 },
 {
   "id": "matching-derivatives",
   "level": "2",
   "url": "sec_pyth_install.html#matching-derivatives",
-  "type": "Übung",
-  "number": "1.1.14",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.6",
   "title": "Cardsort Problem, Derivatives.",
-  "body": " Cardsort Problem, Derivatives  matching derivatives   Match each function with its derivative.    Did you compute the derivative of each function in the premises (left column)?                  "
+  "body": " Cardsort Problem, Derivatives  matching derivatives   Match each function with its derivative.    Did you compute the derivative of each function in the premises (left column)?                             "
 },
 {
   "id": "clickable-code",
   "level": "2",
   "url": "sec_pyth_install.html#clickable-code",
-  "type": "Übung",
-  "number": "1.1.15",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.7",
   "title": "Clickable Areas, Code.",
-  "body": " Clickable Areas, Code   Identify (by clicking, or by circling) all of the assignment statements in this Python function.    def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)    Remember, the operator = is used for assignment.   "
+  "body": " Clickable Areas, Code   Identify (by clicking, or by circling) all of the assignment statements in this Python function.     def main():    x = 4   for i in range(5):   y = i    if y > 2:   print(y)    Remember, the operator = is used for assignment.   "
+},
+{
+  "id": "short-answer-question",
+  "level": "2",
+  "url": "sec_pyth_install.html#short-answer-question",
+  "type": "Übungsaufgabe",
+  "number": "1.1.1.8",
+  "title": "Short Answer.",
+  "body": " Short Answer   This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.    "
+},
+{
+  "id": "fillin-numbers-many-tests",
+  "level": "2",
+  "url": "sec_pyth_install.html#fillin-numbers-many-tests",
+  "type": "Übung",
+  "number": "1.1.10",
+  "title": "Fill-In, New Markup Numbers.",
+  "body": " Fill-In, New Markup Numbers   I love . What number am I thinking of, accurate to two decimal places?           The decimal approximation of is , but to two decimal places we write .        Your answer is within 0.1 of the value I wanted.        That is a reasonable guess, but no.        You chose a value between 3 and 4.        You chose a value that rounds to 3.      "
+},
+{
+  "id": "fillin-strings-",
+  "level": "2",
+  "url": "sec_pyth_install.html#fillin-strings-",
+  "type": "Übung",
+  "number": "1.1.11",
+  "title": "Fill-In, New Markup Strings.",
+  "body": " Fill-In, New Markup Strings   The word I'm thinking about is hinted at by the image.   What word am I thinking about? (Interactive feedback explores a variety of options: Try what happens if you mix the case, or type in a number, or include more than the word, or try pizzazz .\")             Some of the characters used the wrong case.      [0-9]+   You typed a word made out of digits.        Your answer includes the correct word but has extra text.      z.+z   Your answer includes text surrounded by z's.       Do you really need a hint? Carefully reread the question.   "
+},
+{
+  "id": "ex-demo-jscmp-primes",
+  "level": "2",
+  "url": "sec_pyth_install.html#ex-demo-jscmp-primes",
+  "type": "Übung",
+  "number": "1.1.12",
+  "title": "Fill-In, Javascript test of numbers.",
+  "body": " Fill-In, Javascript test of numbers   What is an example of a prime number less than 20?        [2, 3, 5, 7, 11, 13, 17, 19].includes(Number(ans))   Any number from the list is a prime number less than 20.      function(){ const val=Number(ans); if (val <= 0) { return \"You need to give a positive integer.\" }; if (val >= 20) { return \"The integer must be less than 20.\" }; for (let i=2; i<=3; i++) { if (val % i == 0) { return `Your answer is composite; for example, it is divisible by ${i}.` } } return false; }()     "
+},
+{
+  "id": "fillin-jscmp-palindrome",
+  "level": "2",
+  "url": "sec_pyth_install.html#fillin-jscmp-palindrome",
+  "type": "Übung",
+  "number": "1.1.13",
+  "title": "Fill-In, Javascript test of strings.",
+  "body": " Fill-In, Javascript test of strings   What is an example of a palindrome?        function(){ const r1 = new RegExp(\"^\\\\w+$\"); var result=r1.test(ans); if (result) { let revAns = ans.split(\"\").reverse().join(\"\"); result = (ans === revAns); } return result; }()   Any word that is the same forward and backward is a palindrome.     \\w+\\s\\w+   Your response needs to be a single word.      "
+},
+{
+  "id": "fillin-random-simple",
+  "level": "2",
+  "url": "sec_pyth_install.html#fillin-random-simple",
+  "type": "Übung",
+  "number": "1.1.14",
+  "title": "Fill-In, Simple Randomization with Numbers.",
+  "body": " Fill-In, Simple Randomization with Numbers   What is the square of ?      v.myNum=RNG.randDiscrete(2, 12, 1); v.mySquare=v.myNum**2;           You responded with the original number. Now square it.      "
 },
 {
   "id": "exe_1",
   "level": "2",
   "url": "sec_pyth_install.html#exe_1",
   "type": "Übung",
-  "number": "1.1.16",
+  "number": "1.1.15",
   "title": "Optimization.",
   "body": " Optimization    Find the critical points.    Differentiate first.      Classify each critical point.    Use the second derivative test.    "
-},
-{
-  "id": "horizontal-parson-math-test",
-  "level": "2",
-  "url": "sec_pyth_install.html#horizontal-parson-math-test",
-  "type": "Übung",
-  "number": "1.1.17",
-  "title": "Parsons Problem with math blocks.",
-  "body": " Parsons Problem with math blocks   Testing math mode blocks - correct answer is          "
 },
 {
   "id": "question-select",
   "level": "2",
   "url": "sec_pyth_install.html#question-select",
   "type": "Übung",
-  "number": "1.1.18",
+  "number": "1.1.16",
   "title": "Three-way Select Question.",
   "body": "Three-way Select Question Runestone-only: exercise to grade will be automatically chosen by Runestone from , , or . "
 },
 {
-  "id": "comp_A1L",
+  "id": "subsec_pyth_install-31",
   "level": "2",
-  "url": "sec_pyth_install.html#comp_A1L",
+  "url": "sec_pyth_install.html#subsec_pyth_install-31",
   "type": "Berechnung",
-  "number": "1.1.19",
+  "number": "1.1.17",
   "title": "Ausführung eines externen Python-Programms.",
   "body": " Ausführung eines externen Python-Programms   Führe das folgende Programm aus!    \"\"\" Python-Skript A1L.py Lösung zur Aufgabe A1 \"\"\" # Definition von Variablen und Zuweisungen: a = 1 # Die Variablen a, b und c werden mit den Werten: 1 b = 2 # 2 und c = 3 # 3 belegt # 1. Berechnung: a_mal_c = a * c # a * c und b \/ c werden ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c auf die Konsole print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 auf die Konsole # Zuweisung von neuen Werten: a = -10 # Die Variablen a, b und c werden mit neuen Werten -10 b = 100 # 100 und c = -35 # -35 belegt # 2. Berechnung: a_mal_c = a * c # a * c und b \/ c werden erneut ausgerechnet und den b_durch_2 = b \/ 2 # Variablen a_mal_c und b_durch_2 zugewiesen print(\"a = \", a, \", b = \", b, \", c = \", c, sep = '') # Ausgabe von a, b und c print(\"a*c = \", a_mal_c) # Ausgabe von a_mal_c print(\"b\/2 = \", b_durch_2) # Ausgabe von b_durch_2 print(41*'_' + \"\\nDas Programm ist erfolgreich beendet!\")   "
 },
@@ -223,14 +277,14 @@ var ptx_lunr_docs = [
   "type": "Übungsaufgabe",
   "number": "1.1.1.1",
   "title": "",
-  "body": "  Solve for :    Add or subtract terms from both sides so that terms with an are on the left side and all other terms are on the right.    First, combine the two terms that contain . To do this, we subtract from both sides, obtaining. .  Next, we add to both sides so only the term containing remain on the left-hand side: .  Finally, divide both sides by to get by itself: .      "
+  "body": "  Solve for :    Add or subtract terms from both sides so that terms with an are on the left side and all other terms are on the right.    First, combine the two terms that contain . To do this, we subtract from both sides, obtaining. .  Next, we add to both sides so only the term containing remain on the left-hand side: .  Finally, divide both sides by to get by itself: .        "
 },
 {
   "id": "vector-space-dimension",
   "level": "2",
   "url": "sec_pyth_install.html#vector-space-dimension",
   "type": "Übung",
-  "number": "1.1.20",
+  "number": "1.1.18",
   "title": "True\/False.",
   "body": " True\/False  vector space   Every vector space has finite dimension.    The vector space of all polynomials with finite degree has a basis, , which is infinte.     the vector space of polynomials with degree at most , has dimension by ...?   "
 },
@@ -239,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-not-randomized",
   "type": "Übung",
-  "number": "1.1.21",
+  "number": "1.1.19",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": " Multiple-Choice, Not Randomized, One Answer  stop signs   What color is a stop sign?           Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.      What did you see last time you went driving?    Maybe go out for a drive?   "
 },
@@ -248,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-feedback-math",
   "type": "Übung",
-  "number": "1.1.22",
+  "number": "1.1.20",
   "title": "Multiple-Choice, Math in Feedback.",
   "body": " Multiple-Choice, Math in Feedback   What is the coefficient on in ?           Have you accounted for the and that are in the original binomial?           What should the exponents on and be when you expand ?           Have you included something of the form in your computations?           Correct! Using the binomial theorem, we get a term containing the monomial by taking two of the first term, and two of the second term in the expansion of , and so this term is equal to .     "
 },
@@ -257,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_pyth_install.html#multiple-choice-multiple-answers",
   "type": "Übung",
-  "number": "1.1.23",
+  "number": "1.1.21",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": " Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym  ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym  ROY G BIV for the colors of a rainbow, and their order?   "
 },

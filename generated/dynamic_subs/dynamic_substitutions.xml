@@ -1,0 +1,6 @@
+<xml version="1">
+  <dynamic-substitution id="fillin-random-simple">
+    <eval-subst obj="myNum"><latex>7</latex><plain>7</plain></eval-subst>
+    <eval-subst obj="mySquare"><latex>49</latex><plain>49</plain></eval-subst>
+  </dynamic-substitution>
+</xml>
