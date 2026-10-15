@@ -144,7 +144,7 @@ let ggbParams = {
 <div class="toc-title-box"><a href="sec_pyth_install.html#subsec_pyth_install" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Python schon installiert?</span></a></div>
 <ul id="ptx-toc-group-subsec_pyth_install" class="structural toc-item-list">
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_pyth_install.html#parsons-exercises" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Parsons Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_pyth_install.html#subsec_pyth_install-32" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Kapitelübungen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_pyth_install.html#subsec_pyth_install-33" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Kapitelübungen</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_pyth_install.html#basics-sample-worksheet" class="internal"><span class="codenumber">1.1.1</span> <span class="title">A Skeletal Worksheet</span></a></div></li>
 </ul>
 </li>
@@ -649,23 +649,38 @@ pi
 </div></div>
 <div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.13: Fill-In, Javascript test of strings"><a tabindex="-1" href="#fillin-jscmp-palindrome" title="Kopiere Bezeichnung und Link zu Übung 1.1.13: Fill-In, Javascript test of strings" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.13: Fill-In, Javascript test of strings">🔗</a></div>
 </article></details>
-<details id="fillin-random-simple" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.14</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fill-In, Simple Randomization with Numbers.</span>
+<details id="fillin-dynamic-math-example" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.14</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dynamic Square Calculation.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone">
-<div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-fillin-random-simple"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"fillin-random-simple-2-1\">What is the square of <span class=\"process-math\">\\(x=[%= toTeX(myNum) %]\\text{?}\\)<\/span> <span class=\"process-math\">\\(x^2=\\)<\/span> <input type=\"number\" id=\"fillin-random-simple-blank1\" size=\"5\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-random-simple-2-1\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>",
+<div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-fillin-dynamic-math-example"><script type="application/json">{
+"problemHtml": "\n<div class=\"para\" id=\"fillin-dynamic-math-example-2-1\">If <span class=\"process-math\">\\(x = \\)<\/span> [%= x %], what is <span class=\"process-math\">\\(x^2\\text{?}\\)<\/span><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-dynamic-math-example-2-1\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>\n<div class=\"para\" id=\"fillin-dynamic-math-example-2-2\"><span class=\"process-math\">\\(x^2 = \\)<\/span> <input type=\"number\" id=\"fillin-dynamic-math-example-blank1\" size=\"5\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-dynamic-math-example-2-2\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "dyn_imports": ["BTM"],
 "blankNames": {"blank1": 0},
-"dyn_vars": "v._mobjs = new BTM({'rand': rand});\nvar RNG = v._mobjs.menv.rng;\n v.myNum=RNG.randDiscrete(2, 12, 1); v.mySquare=v.myNum**2; v.types = [Number];\nv.afterContentRender = function() {\n};\n",
-"feedbackArray": [[{"solution_code": "function() { return (ans >= mySquare - 0) && (ans <= mySquare + 0); }()", "feedback": "Richtig!"}, {"solution_code": "function() { return (ans >= myNum - 0) && (ans <= myNum + 0); }()", "feedback": "\n<div class=\"para\" id=\"fillin-random-simple-4-1-2-2-1\">You responded with the original number. Now square it.<\/div>"}, {"feedback": "Falsch."}]]
+"dyn_vars": "v._mobjs = new BTM({'rand': rand});\nvar RNG = v._mobjs.menv.rng;\n\n        v.x = RNG.randDiscrete(2, 12, 1);\n        v.xSquared = v.x ** 2;\n      v.types = [Number];\nv.afterContentRender = function() {\n};\n",
+"feedbackArray": [[{"solution_code": "function() { return (ans >= xSquared - 0) && (ans <= xSquared + 0); }()", "feedback": "Richtig!"}, {"solution_code": "function() { return (ans >= x - 0) && (ans <= x + 0); }()", "feedback": "\n<div class=\"para\" id=\"fillin-dynamic-math-example-4-1-2-2-1\">You entered the original value of <span class=\"process-math\">\\(x\\)<\/span> ([%= x %]). Please square it.<\/div>"}, {"feedback": "Falsch."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.14: Fill-In, Simple Randomization with Numbers"><a tabindex="-1" href="#fillin-random-simple" title="Kopiere Bezeichnung und Link zu Übung 1.1.14: Fill-In, Simple Randomization with Numbers" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.14: Fill-In, Simple Randomization with Numbers">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.14: Dynamic Square Calculation"><a tabindex="-1" href="#fillin-dynamic-math-example" title="Kopiere Bezeichnung und Link zu Übung 1.1.14: Dynamic Square Calculation" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.14: Dynamic Square Calculation">🔗</a></div>
+</article></details>
+<details id="fillin-math-solve-equation" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.15</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fill-In, Dynamic Math with Simple Numerical Answer.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone">
+<div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-fillin-math-solve-equation"><script type="application/json">{
+"problemHtml": "\n<div class=\"para logical\" id=\"fillin-math-solve-equation-2-1\"><div class=\"para\">Solve the equation<\/div><div class=\"displaymath process-math\" id=\"fillin-math-solve-equation-2-1-1\">\n\\begin{equation*}\n[%= toTeX(theFunction) %]=0\n\\end{equation*}\n<\/div><div class=\"para\">to get the value of <span class=\"process-math\">\\(x\\text{.}\\)<\/span><\/div><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-math-solve-equation-2-1\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>\n<div class=\"para\" id=\"fillin-math-solve-equation-2-2\"><span class=\"process-math\">\\(x = \\)<\/span> <input type=\"text\" id=\"fillin-math-solve-equation-blank1\" size=\"5\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-math-solve-equation-2-2\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>",
+"solutionHtml": "\n<div class=\"para\" id=\"fillin-math-solve-equation-3-1\">We want to isolate the <span class=\"process-math\">\\(x\\)<\/span> in the equation <span class=\"process-math\">\\([%= toTeX(theFunction) %]=0\\text{.}\\)<\/span> Because addition of <span class=\"process-math\">\\([%= toTeX(b) %]\\)<\/span> is the last operation, we apply the inverse by adding <span class=\"process-math\">\\([%= toTeX(negB) %]\\)<\/span> to both sides. The new, but equivalent equation is now <span class=\"process-math\">\\([%= toTeX(m) %]x = [%= toTeX(negB) %]\n\\text{.}\\)<\/span> Dividing both sides of the equation by <span class=\"process-math\">\\([%= toTeX(m) %]\n\\text{,}\\)<\/span> we obtain the solution <span class=\"process-math\">\\(x=[%= toTeX(theAnswer) %]\n\\text{.}\\)<\/span><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Absatz\"><a tabindex=\"-1\" href=\"#fillin-math-solve-equation-3-1\" title=\"Kopiere Bezeichnung und Link zu Absatz\" aria-label=\"Kopiere Bezeichnung und Link zu Absatz\">🔗<\/a><\/div><\/div>",
+"dyn_imports": ["BTM"],
+"blankNames": {"blank1": 0},
+"dyn_vars": "v._mobjs = new BTM({'rand': rand});\nvar RNG = v._mobjs.menv.rng;\nv.m = v._mobjs.addMathObject(\"m\", \"number\", v._mobjs.generateRandom(\"discrete\", { min:-4, max:5, by:1, nonzero:true}));\nv.b = v._mobjs.addMathObject(\"b\", \"number\", v._mobjs.generateRandom(\"discrete\", { min:-10, max:10, by:1, nonzero:false}));\nv.negB = v._mobjs.addMathObject(\"negB\", \"number\", v._mobjs.parseExpression(\"-b\", \"number\").reduce().simplifyConstants());\nv.theFunction = v._mobjs.addMathObject(\"theFunction\", \"formula\", v._mobjs.parseExpression(\"m*x+b\", \"formula\").reduce().simplifyConstants());\nv.theAnswer = v._mobjs.addMathObject(\"theAnswer\", \"formula\", v._mobjs.parseExpression(\"-b\/m\", \"formula\").reduce().simplifyConstants());\nv.types = [v._mobjs.getParser()];\nv.afterContentRender = function() {\n};\n",
+"feedbackArray": [[{"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = _mobjs.compareExpressions(theAnswer, ans);\n    return (testResults[0]);\n}()", "feedback": "Richtig!"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = _mobjs.compareExpressions(_mobjs.parseExpression(\"{{b}}\/{{m}}\", \"formula\"), ans);\n    return (testResults[0]);\n}()", "feedback": "Check for a sign error while isolating <span class=\"process-math\">\\(x\\text{.}\\)<\/span>"}, {"feedback": "Falsch."}]]
+}</script></div>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.15: Fill-In, Dynamic Math with Simple Numerical Answer"><a tabindex="-1" href="#fillin-math-solve-equation" title="Kopiere Bezeichnung und Link zu Übung 1.1.15: Fill-In, Dynamic Math with Simple Numerical Answer" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.15: Fill-In, Dynamic Math with Simple Numerical Answer">🔗</a></div>
 </article></details>
 <details id="exe_1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.15</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Optimization.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.16</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Optimization.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <article class="task exercise-like" id="exe_1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -676,10 +691,10 @@ pi
 <div class="hint solution-like knowl__content">
 <div class="para" id="exe_1-2-2-1">Differentiate first.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#exe_1-2-2-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.15.a.1"><a tabindex="-1" href="#exe_1-2-2" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.15.a.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.15.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.16.a.1"><a tabindex="-1" href="#exe_1-2-2" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.16.a.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.16.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Teilaufgabe 1.1.15.a"><a tabindex="-1" href="#exe_1-2" title="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.15.a" aria-label="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.15.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Teilaufgabe 1.1.16.a"><a tabindex="-1" href="#exe_1-2" title="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.16.a" aria-label="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.16.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="exe_1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="exe_1-3-1-1">Classify each critical point.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#exe_1-3-1-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
@@ -689,24 +704,24 @@ pi
 <div class="solution solution-like knowl__content">
 <div class="para" id="exe_1-3-2-1">Use the second derivative test.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#exe_1-3-2-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Lösung 1.1.15.b.1"><a tabindex="-1" href="#exe_1-3-2" title="Kopiere Bezeichnung und Link zu Lösung 1.1.15.b.1" aria-label="Kopiere Bezeichnung und Link zu Lösung 1.1.15.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Lösung 1.1.16.b.1"><a tabindex="-1" href="#exe_1-3-2" title="Kopiere Bezeichnung und Link zu Lösung 1.1.16.b.1" aria-label="Kopiere Bezeichnung und Link zu Lösung 1.1.16.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Teilaufgabe 1.1.15.b"><a tabindex="-1" href="#exe_1-3" title="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.15.b" aria-label="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.15.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.15: Optimization"><a tabindex="-1" href="#exe_1" title="Kopiere Bezeichnung und Link zu Übung 1.1.15: Optimization" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.15: Optimization">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Teilaufgabe 1.1.16.b"><a tabindex="-1" href="#exe_1-3" title="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.16.b" aria-label="Kopiere Bezeichnung und Link zu Teilaufgabe 1.1.16.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.16: Optimization"><a tabindex="-1" href="#exe_1" title="Kopiere Bezeichnung und Link zu Übung 1.1.16: Optimization" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.16: Optimization">🔗</a></div>
 </article></details>
 <details id="question-select" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.16</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three-way Select Question.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.17</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three-way Select Question.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="question-select-2">Runestone-only: exercise to grade will be automatically chosen by Runestone from <a href="sec_pyth_install.html#exe_1" class="xref" data-knowl="./knowl/xref/exe_1.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Übung 1.1.15: Optimization">Übung 1.1.15</a>, <a href="sec_pyth_install.html#horizontal-parson-math-test" class="xref" data-knowl="./knowl/xref/exe_2.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Übungsaufgabe 1.1.1.5: Parsons Problem with math blocks">Übungsaufgabe 1.1.1.5</a>, or <a href="sec_pyth_install.html#q_java" class="xref" data-knowl="./knowl/xref/q_java.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Frage 1.1.9">Frage 1.1.9</a>.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#question-select-2" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
+<div class="para" id="question-select-2">Runestone-only: exercise to grade will be automatically chosen by Runestone from <a href="sec_pyth_install.html#exe_1" class="xref" data-knowl="./knowl/xref/exe_1.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Übung 1.1.16: Optimization">Übung 1.1.16</a>, <a href="sec_pyth_install.html#horizontal-parson-math-test" class="xref" data-knowl="./knowl/xref/exe_2.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Übungsaufgabe 1.1.1.5: Parsons Problem with math blocks">Übungsaufgabe 1.1.1.5</a>, or <a href="sec_pyth_install.html#q_java" class="xref" data-knowl="./knowl/xref/q_java.html" data-reveal-label="Anzeigen" data-close-label="Schließen" title="Frage 1.1.9">Frage 1.1.9</a>.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#question-select-2" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.16: Three-way Select Question"><a tabindex="-1" href="#question-select" title="Kopiere Bezeichnung und Link zu Übung 1.1.16: Three-way Select Question" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.16: Three-way Select Question">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.17: Three-way Select Question"><a tabindex="-1" href="#question-select" title="Kopiere Bezeichnung und Link zu Übung 1.1.17: Three-way Select Question" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.17: Three-way Select Question">🔗</a></div>
 </article></details>
-<article class="computation computation-like" id="subsec_pyth_install-31"><h3 class="heading">
-<span class="type">Berechnung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.17</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ausführung eines externen Python-Programms.</span>
+<article class="computation computation-like" id="subsec_pyth_install-32"><h3 class="heading">
+<span class="type">Berechnung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.18</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ausführung eines externen Python-Programms.</span>
 </h3>
-<div class="para" id="subsec_pyth_install-31-2-1">Führe das folgende Programm aus!<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-31-2-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
+<div class="para" id="subsec_pyth_install-32-2-1">Führe das folgende Programm aus!<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-32-2-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-A1L"><textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-A1L_editor" data-question_label="" data-codelens="false" data-timelimit="25000" data-highlight-lines="1-5,6,8">"""
 Python-Skript A1L.py
@@ -741,9 +756,9 @@ print("b/2 = ", b_durch_2) # Ausgabe von b_durch_2
 
 print(41*'_' + "\nDas Programm ist erfolgreich beendet!")
 </textarea></div></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Berechnung 1.1.17: Ausführung eines externen Python-Programms"><a tabindex="-1" href="#subsec_pyth_install-31" title="Kopiere Bezeichnung und Link zu Berechnung 1.1.17: Ausführung eines externen Python-Programms" aria-label="Kopiere Bezeichnung und Link zu Berechnung 1.1.17: Ausführung eines externen Python-Programms">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Berechnung 1.1.18: Ausführung eines externen Python-Programms"><a tabindex="-1" href="#subsec_pyth_install-32" title="Kopiere Bezeichnung und Link zu Berechnung 1.1.18: Ausführung eines externen Python-Programms" aria-label="Kopiere Bezeichnung und Link zu Berechnung 1.1.18: Ausführung eines externen Python-Programms">🔗</a></div>
 </article>
-<section class="exercises" id="subsec_pyth_install-32">
+<section class="exercises" id="subsec_pyth_install-33">
 <h3 class="heading hide-type">
 <span class="type">Übungen</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Kapitelübungen</span>
 </h3>
@@ -805,10 +820,10 @@ x = \frac{7}{5} \text{.}
 </div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Übungsaufgabe 1.1.1.1"><a tabindex="-1" href="#exs_ex_1" title="Kopiere Bezeichnung und Link zu Übungsaufgabe 1.1.1.1" aria-label="Kopiere Bezeichnung und Link zu Übungsaufgabe 1.1.1.1">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Übungen 1.1.1: Kapitelübungen"><a tabindex="-1" href="#subsec_pyth_install-32" title="Kopiere Bezeichnung und Link zu Übungen 1.1.1: Kapitelübungen" aria-label="Kopiere Bezeichnung und Link zu Übungen 1.1.1: Kapitelübungen">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Übungen 1.1.1: Kapitelübungen"><a tabindex="-1" href="#subsec_pyth_install-33" title="Kopiere Bezeichnung und Link zu Übungen 1.1.1: Kapitelübungen" aria-label="Kopiere Bezeichnung und Link zu Übungen 1.1.1: Kapitelübungen">🔗</a></div>
 </section>
-<div class="para logical" id="subsec_pyth_install-33">
-<div class="displaymath process-math" id="subsec_pyth_install-33-1">
+<div class="para logical" id="subsec_pyth_install-34">
+<div class="displaymath process-math" id="subsec_pyth_install-34-1">
 \begin{gather*}
 \int\limits_{0}^{1}\,\sin^{-1}(x)\,dx =
 \left.\frac{1}{\sqrt{1-x^2}}\right\rvert_{x=0}^{x=1} \;\text{text}
@@ -816,17 +831,17 @@ x = \frac{7}{5} \text{.}
 </div>
 <div class="para">This <span class="process-math">\(\int\limits_{0}^{1}\,\sin^{-1}(x)\,dx =
 \frac{1}{\sqrt{1-x^2}}\Big\lvert_{x=0}^{x=1}\)</span> and this</div>
-<div class="displaymath process-math" id="subsec_pyth_install-33-3">
+<div class="displaymath process-math" id="subsec_pyth_install-34-3">
 \begin{equation*}
 UAV = \begin{bmatrix}
 I_r\amp \mathbf 0\\ \mathbf 0\amp\mathbf 0
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-33" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-34" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
 <details id="vector-space-dimension" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.18</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True/False.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.19</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True/False.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-vector-space-dimension">
 <div class="para" id="vector-space-dimension-3-1">Every vector space has finite dimension.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#vector-space-dimension-3-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
@@ -847,13 +862,13 @@ I_r\amp \mathbf 0\\ \mathbf 0\amp\mathbf 0
 <span class="process-math">\(P_{n} \)</span> the vector space of polynomials with degree at most <span class="process-math">\(n
 \text{,}\)</span> has dimension <span class="process-math">\(n+1 \)</span> by ...?<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#vector-space-dimension-5-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.18.1"><a tabindex="-1" href="#vector-space-dimension-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.18.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.18.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.19.1"><a tabindex="-1" href="#vector-space-dimension-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.18: True/False"><a tabindex="-1" href="#vector-space-dimension" title="Kopiere Bezeichnung und Link zu Übung 1.1.18: True/False" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.18: True/False">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.19: True/False"><a tabindex="-1" href="#vector-space-dimension" title="Kopiere Bezeichnung und Link zu Übung 1.1.19: True/False" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.19: True/False">🔗</a></div>
 </article></details>
 <details id="multiple-choice-not-randomized" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.19</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Not Randomized, One Answer.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.20</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Not Randomized, One Answer.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
@@ -886,19 +901,19 @@ I_r\amp \mathbf 0\\ \mathbf 0\amp\mathbf 0
 <div class="hint solution-like knowl__content">
 <div class="para" id="multiple-choice-not-randomized-5-1">What did you see last time you went driving?<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#multiple-choice-not-randomized-5-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.19.1"><a tabindex="-1" href="#multiple-choice-not-randomized-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.20.1"><a tabindex="-1" href="#multiple-choice-not-randomized-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.20.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.20.1">🔗</a></div>
 </div></details>
 <details id="multiple-choice-not-randomized-6" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hinweis</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="hint solution-like knowl__content">
 <div class="para" id="multiple-choice-not-randomized-6-1">Maybe go out for a drive?<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#multiple-choice-not-randomized-6-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.19.2"><a tabindex="-1" href="#multiple-choice-not-randomized-6" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.2" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.19.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.20.2"><a tabindex="-1" href="#multiple-choice-not-randomized-6" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.20.2" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.20.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.19: Multiple-Choice, Not Randomized, One Answer"><a tabindex="-1" href="#multiple-choice-not-randomized" title="Kopiere Bezeichnung und Link zu Übung 1.1.19: Multiple-Choice, Not Randomized, One Answer" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.19: Multiple-Choice, Not Randomized, One Answer">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.20: Multiple-Choice, Not Randomized, One Answer"><a tabindex="-1" href="#multiple-choice-not-randomized" title="Kopiere Bezeichnung und Link zu Übung 1.1.20: Multiple-Choice, Not Randomized, One Answer" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.20: Multiple-Choice, Not Randomized, One Answer">🔗</a></div>
 </article></details>
 <details id="multiple-choice-feedback-math" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.20</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Math in Feedback.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.21</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Math in Feedback.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
@@ -941,10 +956,10 @@ x^4 y^4\text{.}
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.20: Multiple-Choice, Math in Feedback"><a tabindex="-1" href="#multiple-choice-feedback-math" title="Kopiere Bezeichnung und Link zu Übung 1.1.20: Multiple-Choice, Math in Feedback" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.20: Multiple-Choice, Math in Feedback">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.21: Multiple-Choice, Math in Feedback"><a tabindex="-1" href="#multiple-choice-feedback-math" title="Kopiere Bezeichnung und Link zu Übung 1.1.21: Multiple-Choice, Math in Feedback" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.21: Multiple-Choice, Math in Feedback">🔗</a></div>
 </article></details>
 <details id="multiple-choice-multiple-answers" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.21</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Not Randomized, Multiple Answers.</span>
+<span class="type">Übung</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.22</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple-Choice, Not Randomized, Multiple Answers.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
@@ -983,10 +998,10 @@ x^4 y^4\text{.}
 <div class="hint solution-like knowl__content">
 <div class="para" id="multiple-choice-multiple-answers-5-1">Do you know the acronym … <abbr class="acronym">ROY G BIV</abbr> for the colors of a rainbow, and their order?<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#multiple-choice-multiple-answers-5-1" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.21.1"><a tabindex="-1" href="#multiple-choice-multiple-answers-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.21.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.21.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hinweis 1.1.22.1"><a tabindex="-1" href="#multiple-choice-multiple-answers-5" title="Kopiere Bezeichnung und Link zu Hinweis 1.1.22.1" aria-label="Kopiere Bezeichnung und Link zu Hinweis 1.1.22.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.21: Multiple-Choice, Not Randomized, Multiple Answers"><a tabindex="-1" href="#multiple-choice-multiple-answers" title="Kopiere Bezeichnung und Link zu Übung 1.1.21: Multiple-Choice, Not Randomized, Multiple Answers" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.21: Multiple-Choice, Not Randomized, Multiple Answers">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Übung 1.1.22: Multiple-Choice, Not Randomized, Multiple Answers"><a tabindex="-1" href="#multiple-choice-multiple-answers" title="Kopiere Bezeichnung und Link zu Übung 1.1.22: Multiple-Choice, Not Randomized, Multiple Answers" aria-label="Kopiere Bezeichnung und Link zu Übung 1.1.22: Multiple-Choice, Not Randomized, Multiple Answers">🔗</a></div>
 </article></details>
 <section class="worksheet" id="basics-sample-worksheet" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h3 class="heading hide-type">
@@ -1022,9 +1037,9 @@ x^4 y^4\text{.}
 </div>
 </div></section><div class="autopermalink" aria-hidden="true" data-description="Arbeitsblatt 1.1.1: A Skeletal Worksheet"><a tabindex="-1" href="#basics-sample-worksheet" title="Kopiere Bezeichnung und Link zu Arbeitsblatt 1.1.1: A Skeletal Worksheet" aria-label="Kopiere Bezeichnung und Link zu Arbeitsblatt 1.1.1: A Skeletal Worksheet">🔗</a></div>
 </section>
-<div class="para" id="subsec_pyth_install-39">  verschiedene Versionen von Python gleichzeitig installiert zu haben. Sinnvoll zum Lernen wäre jedoch die aktuellste Version 3.14.2 (zum Zeitpunkt der Drucklegung), worauf die folgende Diskussion basiert ist.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-39" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
+<div class="para" id="subsec_pyth_install-40">  verschiedene Versionen von Python gleichzeitig installiert zu haben. Sinnvoll zum Lernen wäre jedoch die aktuellste Version 3.14.2 (zum Zeitpunkt der Drucklegung), worauf die folgende Diskussion basiert ist.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-40" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
-<div class="para" id="subsec_pyth_install-40">Falls Python nicht vorhanden ist, werden in folgenden Abschnitten zwei gängige Methoden beschrieben, um Python auf einem PC –System möglichst schnell und effizient installieren zu können.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-40" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
+<div class="para" id="subsec_pyth_install-41">Falls Python nicht vorhanden ist, werden in folgenden Abschnitten zwei gängige Methoden beschrieben, um Python auf einem PC –System möglichst schnell und effizient installieren zu können.<div class="autopermalink" aria-hidden="true" data-description="Absatz"><a tabindex="-1" href="#subsec_pyth_install-41" title="Kopiere Bezeichnung und Link zu Absatz" aria-label="Kopiere Bezeichnung und Link zu Absatz">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Unterabschnitt 1.1.1: Python schon installiert?"><a tabindex="-1" href="#subsec_pyth_install" title="Kopiere Bezeichnung und Link zu Unterabschnitt 1.1.1: Python schon installiert?" aria-label="Kopiere Bezeichnung und Link zu Unterabschnitt 1.1.1: Python schon installiert?">🔗</a></div>
 </section>
