@@ -1,7 +1,7 @@
 <xml version="1">
   <dynamic-substitution id="fillin-dynamic-math-example">
-    <eval-subst obj="x"><latex>7</latex><plain>7</plain></eval-subst>
-    <eval-subst obj="xSquared"><latex>49</latex><plain>49</plain></eval-subst>
+    <eval-subst obj="x"><latex>6.742441365735922</latex><plain>6.742441365735922</plain></eval-subst>
+    <eval-subst obj="xSquared"><latex>45.46051557038688</latex><plain>45.46051557038688</plain></eval-subst>
   </dynamic-substitution>
   <dynamic-substitution id="fillin-math-solve-equation">
     <eval-subst obj="theFunction"><latex>-2 x-6</latex><plain>-2*x+-6</plain></eval-subst>
